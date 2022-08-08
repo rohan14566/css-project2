@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9adae6ef60.js" crossorigin="anonymous"></script>
+ <style>
+    body{
+        background-image: url(img22.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.center{
+    font-size: 18px;
+    background-color: antiquewhite;
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    top:200px;
+    left:400px;
+}
+.contain1{
+    padding-left: 30px;
+    position: relative;
+    top:20px;
+}
+ input{
+    background-color: wheat;
+    border-radius: 10px;
+    height:40px;
+    width:350px;
+    text-align: center;
+}    
+.contain2{
+    border-radius:10px;
+    position: relative;
+    top: 75px;
+    left:300px;
+}
+.container3{
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:360px){
+    body{
+        background-image: url(backimg.png);
+        background-size:cover;
+    }
+    .center{
+        left: 0px;
+        width: 90%;
+        height: 200px; 
+    }
+    input{
+        width: 225px;
+        height: 25px;
+    }
+    .contain2{
+        top: 50px;
+        left: 160px;
+    }
+    .container3{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:820px) {
+    body{
+        background-image: url(bgimg.png);
+        background-size:cover;
+    }
+    .center{
+        left: 200px;
+        width: 450px;
+        height: 300px; 
+    }
+    .contain2{
+        top: 100px;
+        left: 300px;
+        font-size: 40px;
+    }
+    input{
+        position: relative;
+        top: 35px;
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .container3{
+        font-size: 25px;
+    }
+}
+@media (max-width:450px){
+    body{
+        background-image: url(backimg.png);
+        background-size:cover;
+    }
+    .center{
+        left: 0px;
+        width: 90%;
+        height: 200px; 
+        padding:20px;
+        border-radius: 10px;
+    }
+    input{
+        position: relative;
+        top: 20px;
+        width: 245px;
+        height: 30px;
+    }
+    .contain2{
+        top: 75px;
+        left: 180px;
+    }
+    .container3{
+        font-size: 22px;
+    }
+}
+
+
+ </style>       
+</head>
+<body>
+    <div class="center">
+    <div class="container3">
+        <span style="color:black ;">Add new Task</span>
+        <Span>
+            <a href="new.html" style="text-decoration:none;" ><i class="fa-solid fa-xmark" style="color:black;"></i></a>
+        </Span>
+     </div>
+     <hr>
+     <div class="contain1" >
+        <input type="search" value="" placeholder="learn c++">
+     </div>
+     <div class="contain2">
+      <button style="background-color:rgb(59, 59, 234);width:90px;height:35px;">
+        <a href="new2.html"style="text-decoration:none;color: #000;">+Add Task</a>
+    </button>
+     </div>
+    </div>
+</body>
+</html>
